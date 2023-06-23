@@ -1,0 +1,199 @@
+
+/* colors */
+:root {
+  --grayBg: #ebedf0;
+  --whiteBg: #fff;
+  --darkText: #333;
+  --lightText: #fff;
+  --darkBlue: #204d91;
+  --lightBlue: #14A8BB;
+}
+
+/* Font-family */
+@font-face {
+  font-family: vazirFont;
+  src: url('../fonts/Vazir-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* body */
+body {
+  background-color: var(--grayBg);
+  font-family: vazirFont;
+  font-size: 14px;
+}
+
+/* Navbar */
+.header {
+  background-color: var(--whiteBg);
+  border-bottom: 2px solid #c9c9c9;
+}
+
+.header .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header .nav .nav-btn {
+  background-color: var(--darkBlue);
+  color: var(--lightText);
+  font-size: 1rem;
+  font-family: vazirFont;
+  border: 1px solid var(--darkBlue);
+  padding: 12px 50px;
+  border-radius: 14px;
+  margin: 20px 50px;
+}
+
+.header .nav .nav-logo {
+  margin: 20px 50px;
+}
+
+/* Container Styles */
+.container {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "menu menu profile"
+    "content content profile"
+    "content content .";
+}
+
+/* Menu Styles */
+.container .menu { 
+  grid-area: menu; 
+  margin: 20px 0;
+  justify-self: center;
+}
+
+.container .menu .boxs {
+  background-color: var(--darkBlue);
+  color: var(--lightText);
+  padding: 15px 150px;
+  font-family: vazirFont;
+  font-size: 1rem;
+  border: 1px solid var(--darkBlue);
+  border-radius: 25px;
+}
+
+.container .menu .partnerships {
+  background-color: var(--whiteBg);
+  color: var(--darkBlue);
+  padding: 15px 150px;
+  font-family: vazirFont;
+  font-size: 1rem;
+  border: 1px solid var(--whiteBg);
+  border-radius: 25px;
+}
+
+/* Profile Styles */
+.container .profile { 
+  grid-area: profile; 
+  background-color: var(--whiteBg);
+  margin-right: 180px;
+  margin-top: 25px;
+  border: 1px solid var(--whiteBg);
+  border-radius: 15px;
+  justify-self: center;
+}
+
+.container .profile .profile-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .profile .profile-up img {
+  margin: 15px 100px;
+  border: 5px solid var(--darkBlue);
+  border-radius: 50%;
+}
+
+.container .profile .profile-up h2 {
+  font-family: vazirFont;
+  font-size: 1.2rem;
+  color: var(--darkBlue);
+  font-weight: bold;
+  margin: 0 100px;
+}
+
+.container .profile .profile-up .line {
+  width: 250px;
+  height: 47px;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.container .profile .profile-down-1 {
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .profile .profile-down-1 .title {
+  margin: 20px 10px;
+  margin-right: 15px;
+  color: var(--lightBlue);
+  font-size: 1rem;
+}
+
+.container .profile .profile-down-1 .value {
+  margin: 20px 10px;
+  margin-left: 15px;
+  color: var(--darkBlue);
+  font-size: 1rem;
+}
+
+.container .profile .profile-down-2 {
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .profile .profile-down-2 .title {
+  margin: 5px 10px;
+  margin-right: 15px;
+  color: var(--lightBlue);
+  font-size: 1rem;
+}
+
+.container .profile .profile-down-2 .value {
+  margin: 5px 10px;
+  margin-left: 16px;
+  color: var(--darkBlue);
+  font-size: 1rem;
+}
+
+.container .profile .profile-down-3 {
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container .profile .profile-down-3 .title {
+  margin: 20px 10px;
+  margin-right: 15px;
+  color: var(--lightBlue);
+  font-size: 1rem;
+}
+
+.container .profile .profile-down-3 .value {
+  margin: 20px 10px;
+  margin-left: 16px;
+  color: var(--darkBlue);
+  font-size: 1rem;
+}
+
+/* Content Styles */
+.container .content { 
+  grid-area: content; 
+}
+
